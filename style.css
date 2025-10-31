@@ -1,0 +1,384 @@
+/* تنظیمات پایه (Base Reset) */
+@font-face {
+    font-family: 'Vazir';
+    src: url('Vazirmatn-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazir', Tahoma, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9; 
+    color: #333;
+    direction: rtl; 
+    text-align: right;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* استایل‌دهی دکمه‌ها */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #263646;
+    color: white;
+    border: 1px solid #263646;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+
+.btn-primary:hover {
+    background-color: #fdd700;
+    color: #263646;
+}
+
+.btn-secondary {
+    background-color: #fdd700;
+    color: #263646;
+    border: 1px solid #fdd700;
+    border-radius: 15px;
+    padding: 8px 15px;
+    font-size: 0.9em;
+}
+
+.btn-secondary:hover {
+    background-color: #263646;
+    color: #fdd700;
+}
+
+.btn-login {
+    background-color: transparent;
+    color: #fdd700 ;
+    border: 1px solid #fdd700;
+    border-radius: 15px;
+}
+
+.btn-login:hover {
+    background-color: #fdd700;
+    color: #263646;
+}
+
+.btn-cta {
+    background-color: #fdd700; 
+    color: #263646;
+    border: 1px solid #263646;
+    border-radius: 15px;
+}
+.btn-cta:hover {
+    background-color: #263646;
+    color: #fdd700;
+}
+
+/* نوار ناوبری */
+.main-header {
+    background-color: #263646;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li a {
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-nav ul li a:hover {
+    color: #fdd700;
+}
+
+/* بخش بنر اصلی (Hero Banner) */
+.hero-banner {
+    background-color: #fdd700;
+    padding: 40px 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    
+}
+
+.hero-banner h2 {
+    color: #263646;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-banner p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+
+
+
+.poster-home {
+    width: 1500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.poster-login {
+    width: 300px;
+    float: right;
+    padding-right: 15px;
+}
+
+.text-login {
+    float:left;
+    height: 50px;
+    padding: 100px 0 60px 200px;
+
+}
+
+.poster-services {
+    width: 300px;
+    float: right;
+
+}
+
+.text-login2 {
+    float:left;
+    height: 150px;
+    margin-left: 400px;
+    padding: 100px 0 60px 0;  
+}
+
+
+
+
+/* کارت های گزینش وصال نت */
+
+.why {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+    background-color: #263646;
+    color: #fdd700;
+}
+
+.poster-why {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+
+.feature-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; 
+    text-align: center;
+}
+
+.card {
+    background-color: var(--bg-light);
+    padding: 30px;  
+    border-radius: 15px;
+    box-shadow: var(--shadow-light);
+    flex-basis: calc(25% - 15px); 
+    transition: transform 0.3s ease;
+    border: 1px solid #263646;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+
+/* بخش کارت‌های خدمات */
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.services-cards {
+    padding: 20px 0 60px 0;
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background-color: #263646;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    width: calc(33% - 20px); 
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.service-card h3 {
+    color: #fdd700;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    margin-bottom: 15px;
+    color: white;
+    flex-grow: 1; 
+}
+
+.deadline {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block;
+    padding: 5px 0;
+}
+
+/* بخش اطلاعیه ها */
+.announcements {
+    text-align: center;
+    background-color: #fdd700;
+    border: 1px solid #ffeeba;
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+.announcements h2 {
+    color: #263646;
+    margin-bottom: 10px;
+}
+
+.announcements p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+/* پاورقی */
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.4rem;
+    margin-right: 15px;
+}
+
+.social-icons a:hover {
+    color: #fdd700;
+}
+.main-footer {
+    background-color: #333;
+    color: white;
+    padding-top: 40px;
+    font-size: 0.9em;
+}
+
+.main-footer .container {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #555;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    line-height: 2.5;
+}
+
+.footer-links ul li a:hover {
+    color: #fdd700;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #222;
+}
+
+/* استایل‌های ریسپانسیو */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-nav {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-nav ul li a {
+        padding: 5px 15px;
+    }
+    .cards-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-card {
+        width: 90%; 
+    }
+    .main-footer .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
